@@ -1,0 +1,678 @@
+{
+  "cv_summary": {
+    "logistic_regression": {
+      "precision": {
+        "mean": 0.5656740576388579,
+        "std": 0.11794963294013075
+      },
+      "recall": {
+        "mean": 0.6858133368408371,
+        "std": 0.0505255119219912
+      },
+      "f1": {
+        "mean": 0.6156433628234046,
+        "std": 0.0898722914793169
+      },
+      "pr_auc": {
+        "mean": 0.6789064334749318,
+        "std": 0.10149781005868296
+      }
+    },
+    "random_forest": {
+      "precision": {
+        "mean": 0.5796205832722148,
+        "std": 0.11084299173339753
+      },
+      "recall": {
+        "mean": 0.6927082159975892,
+        "std": 0.039032568826437505
+      },
+      "f1": {
+        "mean": 0.6273343469901246,
+        "std": 0.07994315101732026
+      },
+      "pr_auc": {
+        "mean": 0.6633657926496822,
+        "std": 0.11132994376420521
+      }
+    },
+    "xgboost": {
+      "precision": {
+        "mean": 0.4808073030997493,
+        "std": 0.11921294488930538
+      },
+      "recall": {
+        "mean": 0.6633043967860164,
+        "std": 0.01456105487420548
+      },
+      "f1": {
+        "mean": 0.5498794675326779,
+        "std": 0.087811392828654
+      },
+      "pr_auc": {
+        "mean": 0.5799989020834326,
+        "std": 0.10414396367124949
+      }
+    }
+  },
+  "cv_results": {
+    "logistic_regression": [
+      {
+        "precision": 0.3996212121212121,
+        "recall": 0.650231124807396,
+        "f1": 0.4950146627565982,
+        "pr_auc": 0.5428016344393202
+      },
+      {
+        "precision": 0.7057374164026751,
+        "recall": 0.78198127925117,
+        "f1": 0.7419056429232193,
+        "pr_auc": 0.8190847186464103
+      },
+      {
+        "precision": 0.651106833493744,
+        "recall": 0.691717791411043,
+        "f1": 0.6707982151710461,
+        "pr_auc": 0.752054625702799
+      },
+      {
+        "precision": 0.45439330543933054,
+        "recall": 0.6510791366906474,
+        "f1": 0.5352390340069,
+        "pr_auc": 0.5902840583811333
+      },
+      {
+        "precision": 0.6175115207373272,
+        "recall": 0.6540573520439292,
+        "f1": 0.6352592592592593,
+        "pr_auc": 0.6903071302049965
+      }
+    ],
+    "random_forest": [
+      {
+        "precision": 0.4402035623409669,
+        "recall": 0.6664098613251156,
+        "f1": 0.530186944529574,
+        "pr_auc": 0.47781357717244216
+      },
+      {
+        "precision": 0.6743704725767506,
+        "recall": 0.7624804992199687,
+        "f1": 0.7157239611934835,
+        "pr_auc": 0.771852602129484
+      },
+      {
+        "precision": 0.7106756059824652,
+        "recall": 0.7044989775051125,
+        "f1": 0.7075738125802311,
+        "pr_auc": 0.7626603802341949
+      },
+      {
+        "precision": 0.45861486486486486,
+        "recall": 0.6510791366906474,
+        "f1": 0.5381565906838454,
+        "pr_auc": 0.5990239249556096
+      },
+      {
+        "precision": 0.6142384105960265,
+        "recall": 0.6790726052471019,
+        "f1": 0.6450304259634888,
+        "pr_auc": 0.70547847875668
+      }
+    ],
+    "xgboost": [
+      {
+        "precision": 0.31734732109404273,
+        "recall": 0.652542372881356,
+        "f1": 0.42702293924880264,
+        "pr_auc": 0.43222397285624675
+      },
+      {
+        "precision": 0.5981988223068929,
+        "recall": 0.6735569422776911,
+        "f1": 0.6336452027150982,
+        "pr_auc": 0.6808259620310155
+      },
+      {
+        "precision": 0.6048604860486049,
+        "recall": 0.6871165644171779,
+        "f1": 0.6433700335088559,
+        "pr_auc": 0.6792436686329488
+      },
+      {
+        "precision": 0.36394101876675605,
+        "recall": 0.6510791366906474,
+        "f1": 0.46689595872742906,
+        "pr_auc": 0.4796571461339968
+      },
+      {
+        "precision": 0.5196888672824501,
+        "recall": 0.6522269676632093,
+        "f1": 0.5784632034632035,
+        "pr_auc": 0.6280437607629551
+      }
+    ]
+  },
+  "test_results": {
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "default_threshold": {
+        "threshold": 0.5,
+        "precision": 0.2074953154278576,
+        "recall": 0.9724824355971897,
+        "f1": 0.3420158550396376,
+        "pr_auc": 0.68150763061878,
+        "confusion_matrix": [
+          [
+            115508,
+            6344
+          ],
+          [
+            47,
+            1661
+          ]
+        ]
+      },
+      "optimal_threshold": {
+        "threshold": 0.9784457983778386,
+        "precision": 0.6077257889009793,
+        "recall": 0.6539812646370023,
+        "f1": 0.6300056401579244,
+        "pr_auc": 0.68150763061878,
+        "confusion_matrix": [
+          [
+            121131,
+            721
+          ],
+          [
+            591,
+            1117
+          ]
+        ]
+      },
+      "cost_analysis": {
+        "fn": 591,
+        "fp": 721,
+        "total_cost": 3676,
+        "baseline_cost": 8540,
+        "cost_reduction_pct": 56.95550351288057
+      }
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "default_threshold": {
+        "threshold": 0.5,
+        "precision": 0.3186703821656051,
+        "recall": 0.9373536299765808,
+        "f1": 0.4756387403446227,
+        "pr_auc": 0.6828155832513196,
+        "confusion_matrix": [
+          [
+            118429,
+            3423
+          ],
+          [
+            107,
+            1601
+          ]
+        ]
+      },
+      "optimal_threshold": {
+        "threshold": 0.8926678667326235,
+        "precision": 0.5421686746987951,
+        "recall": 0.7377049180327869,
+        "f1": 0.625,
+        "pr_auc": 0.6828155832513196,
+        "confusion_matrix": [
+          [
+            120788,
+            1064
+          ],
+          [
+            448,
+            1260
+          ]
+        ]
+      },
+      "cost_analysis": {
+        "fn": 448,
+        "fp": 1064,
+        "total_cost": 3304,
+        "baseline_cost": 8540,
+        "cost_reduction_pct": 61.31147540983607
+      }
+    },
+    "xgboost": {
+      "model": "XGBoost",
+      "default_threshold": {
+        "threshold": 0.5,
+        "precision": 0.40203784570596796,
+        "recall": 0.8085480093676815,
+        "f1": 0.5370406377600622,
+        "pr_auc": 0.6541065898481867,
+        "confusion_matrix": [
+          [
+            119798,
+            2054
+          ],
+          [
+            327,
+            1381
+          ]
+        ]
+      },
+      "optimal_threshold": {
+        "threshold": 0.7479490637779236,
+        "precision": 0.5074436410038281,
+        "recall": 0.6984777517564403,
+        "f1": 0.587829514658783,
+        "pr_auc": 0.6541065898481867,
+        "confusion_matrix": [
+          [
+            120694,
+            1158
+          ],
+          [
+            515,
+            1193
+          ]
+        ]
+      },
+      "cost_analysis": {
+        "fn": 515,
+        "fp": 1158,
+        "total_cost": 3733,
+        "baseline_cost": 8540,
+        "cost_reduction_pct": 56.28805620608899
+      }
+    }
+  },
+  "feature_importance": {
+    "random_forest": [
+      {
+        "feature": "AQHI_lag_1",
+        "importance": 0.22171542762129548
+      },
+      {
+        "feature": "AQHI_rolling_mean_3",
+        "importance": 0.1614516216663461
+      },
+      {
+        "feature": "AQHI_lag_2",
+        "importance": 0.13277527109080375
+      },
+      {
+        "feature": "AQHI_rolling_std_6",
+        "importance": 0.11583940659351666
+      },
+      {
+        "feature": "AQHI_diff_3",
+        "importance": 0.0646351691619468
+      },
+      {
+        "feature": "AQHI_rolling_mean_6",
+        "importance": 0.06406809553442819
+      },
+      {
+        "feature": "AQHI_lag_3",
+        "importance": 0.04116412131620434
+      },
+      {
+        "feature": "hour",
+        "importance": 0.036222531278116615
+      },
+      {
+        "feature": "AQHI_diff_1",
+        "importance": 0.028997212844925596
+      },
+      {
+        "feature": "hour_sin",
+        "importance": 0.023281617218608462
+      },
+      {
+        "feature": "hour_cos",
+        "importance": 0.019358549927840685
+      },
+      {
+        "feature": "AQHI_lag_24",
+        "importance": 0.018350467536440478
+      },
+      {
+        "feature": "Temp",
+        "importance": 0.01223569534337795
+      },
+      {
+        "feature": "RH",
+        "importance": 0.012056210936001259
+      },
+      {
+        "feature": "AQHI_lag_6",
+        "importance": 0.009518469183644617
+      },
+      {
+        "feature": "WetBulb",
+        "importance": 0.009074320524288635
+      },
+      {
+        "feature": "dayofyear",
+        "importance": 0.008016401308989578
+      },
+      {
+        "feature": "month_sin",
+        "importance": 0.004531779732025466
+      },
+      {
+        "feature": "month",
+        "importance": 0.0032889307830439576
+      },
+      {
+        "feature": "month_cos",
+        "importance": 0.003253101359755069
+      },
+      {
+        "feature": "AQHI_lag_12",
+        "importance": 0.0027144643899919673
+      },
+      {
+        "feature": "dayofweek",
+        "importance": 0.00222674319978415
+      },
+      {
+        "feature": "dow_sin",
+        "importance": 0.001939111482673035
+      },
+      {
+        "feature": "dow_cos",
+        "importance": 0.0014673512616438277
+      },
+      {
+        "feature": "Rainfall",
+        "importance": 0.0010528752606796758
+      },
+      {
+        "feature": "is_weekend",
+        "importance": 0.000508119663860047
+      },
+      {
+        "feature": "is_roadside",
+        "importance": 0.0002569337797676339
+      }
+    ],
+    "xgboost": [
+      {
+        "feature": "AQHI_lag_1",
+        "importance": 0.42611372470855713
+      },
+      {
+        "feature": "AQHI_rolling_mean_3",
+        "importance": 0.1732337325811386
+      },
+      {
+        "feature": "AQHI_diff_3",
+        "importance": 0.0942302942276001
+      },
+      {
+        "feature": "AQHI_lag_2",
+        "importance": 0.07356680184602737
+      },
+      {
+        "feature": "AQHI_rolling_std_6",
+        "importance": 0.0496092364192009
+      },
+      {
+        "feature": "hour_cos",
+        "importance": 0.03410021960735321
+      },
+      {
+        "feature": "Temp",
+        "importance": 0.011389991268515587
+      },
+      {
+        "feature": "month",
+        "importance": 0.010347681120038033
+      },
+      {
+        "feature": "dayofyear",
+        "importance": 0.009880997240543365
+      },
+      {
+        "feature": "WetBulb",
+        "importance": 0.00977261457592249
+      },
+      {
+        "feature": "RH",
+        "importance": 0.008591809310019016
+      },
+      {
+        "feature": "month_cos",
+        "importance": 0.008114071562886238
+      },
+      {
+        "feature": "month_sin",
+        "importance": 0.007993359118700027
+      },
+      {
+        "feature": "dow_cos",
+        "importance": 0.007894996553659439
+      },
+      {
+        "feature": "hour_sin",
+        "importance": 0.007807251997292042
+      },
+      {
+        "feature": "AQHI_diff_1",
+        "importance": 0.007700870279222727
+      },
+      {
+        "feature": "hour",
+        "importance": 0.006634957157075405
+      },
+      {
+        "feature": "dayofweek",
+        "importance": 0.006136175245046616
+      },
+      {
+        "feature": "AQHI_lag_24",
+        "importance": 0.005860870238393545
+      },
+      {
+        "feature": "dow_sin",
+        "importance": 0.005577403120696545
+      },
+      {
+        "feature": "is_weekend",
+        "importance": 0.0054647186771035194
+      },
+      {
+        "feature": "AQHI_rolling_mean_6",
+        "importance": 0.005464383400976658
+      },
+      {
+        "feature": "AQHI_lag_12",
+        "importance": 0.0052033839747309685
+      },
+      {
+        "feature": "AQHI_lag_3",
+        "importance": 0.005166737828403711
+      },
+      {
+        "feature": "AQHI_lag_6",
+        "importance": 0.00511709600687027
+      },
+      {
+        "feature": "Rainfall",
+        "importance": 0.004516648594290018
+      },
+      {
+        "feature": "is_roadside",
+        "importance": 0.00450993562117219
+      }
+    ],
+    "logistic_regression": [
+      {
+        "feature": "AQHI_rolling_mean_6",
+        "coefficient": -1.358756966801897,
+        "abs_coefficient": 1.358756966801897
+      },
+      {
+        "feature": "hour_cos",
+        "coefficient": -1.3156363944907794,
+        "abs_coefficient": 1.3156363944907794
+      },
+      {
+        "feature": "AQHI_lag_1",
+        "coefficient": 1.1579036286814717,
+        "abs_coefficient": 1.1579036286814717
+      },
+      {
+        "feature": "AQHI_rolling_mean_3",
+        "coefficient": 1.0307756609740097,
+        "abs_coefficient": 1.0307756609740097
+      },
+      {
+        "feature": "AQHI_lag_2",
+        "coefficient": 1.0272387417730457,
+        "abs_coefficient": 1.0272387417730457
+      },
+      {
+        "feature": "AQHI_lag_3",
+        "coefficient": 0.8437431020897346,
+        "abs_coefficient": 0.8437431020897346
+      },
+      {
+        "feature": "AQHI_diff_3",
+        "coefficient": 0.725966862001407,
+        "abs_coefficient": 0.725966862001407
+      },
+      {
+        "feature": "Temp",
+        "coefficient": 0.6767750679667779,
+        "abs_coefficient": 0.6767750679667779
+      },
+      {
+        "feature": "Rainfall",
+        "coefficient": -0.5907071283704,
+        "abs_coefficient": 0.5907071283704
+      },
+      {
+        "feature": "hour_sin",
+        "coefficient": -0.549245234539003,
+        "abs_coefficient": 0.549245234539003
+      },
+      {
+        "feature": "month",
+        "coefficient": -0.5108641392209827,
+        "abs_coefficient": 0.5108641392209827
+      },
+      {
+        "feature": "AQHI_lag_6",
+        "coefficient": 0.43961717902548175,
+        "abs_coefficient": 0.43961717902548175
+      },
+      {
+        "feature": "AQHI_diff_1",
+        "coefficient": 0.43803872669805677,
+        "abs_coefficient": 0.43803872669805677
+      },
+      {
+        "feature": "dayofyear",
+        "coefficient": 0.3552157697869576,
+        "abs_coefficient": 0.3552157697869576
+      },
+      {
+        "feature": "AQHI_rolling_std_6",
+        "coefficient": 0.3319677043731657,
+        "abs_coefficient": 0.3319677043731657
+      },
+      {
+        "feature": "WetBulb",
+        "coefficient": 0.32695517727033263,
+        "abs_coefficient": 0.32695517727033263
+      },
+      {
+        "feature": "hour",
+        "coefficient": -0.2658218402544816,
+        "abs_coefficient": 0.2658218402544816
+      },
+      {
+        "feature": "month_sin",
+        "coefficient": 0.25134138764323993,
+        "abs_coefficient": 0.25134138764323993
+      },
+      {
+        "feature": "RH",
+        "coefficient": -0.1991614931956355,
+        "abs_coefficient": 0.1991614931956355
+      },
+      {
+        "feature": "month_cos",
+        "coefficient": 0.16395539407421578,
+        "abs_coefficient": 0.16395539407421578
+      },
+      {
+        "feature": "dow_cos",
+        "coefficient": -0.15686697134176192,
+        "abs_coefficient": 0.15686697134176192
+      },
+      {
+        "feature": "dayofweek",
+        "coefficient": 0.15401654085601554,
+        "abs_coefficient": 0.15401654085601554
+      },
+      {
+        "feature": "dow_sin",
+        "coefficient": 0.13940220621428692,
+        "abs_coefficient": 0.13940220621428692
+      },
+      {
+        "feature": "AQHI_lag_24",
+        "coefficient": 0.1064332024158441,
+        "abs_coefficient": 0.1064332024158441
+      },
+      {
+        "feature": "is_roadside",
+        "coefficient": -0.057560869436926586,
+        "abs_coefficient": 0.057560869436926586
+      },
+      {
+        "feature": "is_weekend",
+        "coefficient": -0.025016117241994252,
+        "abs_coefficient": 0.025016117241994252
+      },
+      {
+        "feature": "AQHI_lag_12",
+        "coefficient": -0.004580144774030206,
+        "abs_coefficient": 0.004580144774030206
+      }
+    ]
+  },
+  "feature_cols": [
+    "hour",
+    "dayofweek",
+    "month",
+    "dayofyear",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "is_weekend",
+    "AQHI_lag_1",
+    "AQHI_lag_2",
+    "AQHI_lag_3",
+    "AQHI_lag_6",
+    "AQHI_lag_12",
+    "AQHI_lag_24",
+    "AQHI_rolling_mean_3",
+    "AQHI_rolling_mean_6",
+    "AQHI_rolling_std_6",
+    "AQHI_diff_1",
+    "AQHI_diff_3",
+    "Temp",
+    "RH",
+    "Rainfall",
+    "WetBulb",
+    "is_roadside"
+  ]
+}
