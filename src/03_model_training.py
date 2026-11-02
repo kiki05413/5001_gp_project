@@ -207,8 +207,8 @@ def evaluate_model(model, scaler, X_test, y_test, model_name, threshold=0.5):
             'pr_auc': float(average_precision_score(y_test, y_proba)),
             'confusion_matrix': confusion_matrix(y_test, y_pred_opt).tolist(),
         },
-        'y_proba': y_proba.tolist() if len(y_proba) < 5000 else y_proba[:5000].tolist(),
-        'y_test': y_test.tolist() if len(y_test) < 5000 else y_test[:5000].tolist(),
+        'y_proba': y_proba.tolist(),
+        'y_test': y_test.tolist(),
     }
     
     return results
