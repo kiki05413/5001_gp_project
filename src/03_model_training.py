@@ -12,6 +12,7 @@ Evaluation:
   - TimeSeriesSplit cross-validation
   - Recall, Precision, F1, PR-AUC
   - Confusion matrices
+
   - Threshold optimization
   - Cost-benefit analysis (missed alerts vs false alarms)
 """
